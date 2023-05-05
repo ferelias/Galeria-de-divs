@@ -37,6 +37,15 @@ function mostrarDiv(div, tiempo) {
       console.log(error);
     }
   }
+
+  // Hacer que la animacion se repita
+  async function animacionInfinita() {
+    while (true) {
+      await animacion();
+    }
+  }
+  
+  animacionInfinita();
   
   // Llamada a la función asincrónica
   animacion();
